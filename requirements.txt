@@ -4,5 +4,5 @@ numpy
 pymongo
 certifi
 pymongo[srv]
-
+scikit-learn
 # -e .   (better to use this line after the completion of the code)
