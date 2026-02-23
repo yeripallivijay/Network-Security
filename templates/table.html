@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Table</title>
+
+<style>
+body{
+    font-family: 'Segoe UI', sans-serif;
+    margin:0;
+    background: linear-gradient(120deg,#eef2f7,#dce6f9);
+    transition:.3s;
+}
+
+.container{
+    width:95%;
+    margin:auto;
+    margin-top:25px;
+}
+
+h2{
+    text-align:center;
+    color:#2c3e50;
+    margin-bottom:20px;
+}
+
+.toolbar{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    margin-bottom:15px;
+}
+
+input{
+    padding:10px;
+    border-radius:8px;
+    border:1px solid #ccc;
+    width:220px;
+}
+
+button{
+    padding:10px 15px;
+    border:none;
+    border-radius:8px;
+    background:#4a90e2;
+    color:white;
+    cursor:pointer;
+    margin-left:5px;
+    transition:.2s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+table{
+    border-collapse:collapse;
+    width:100%;
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+th{
+    background:#4a90e2;
+    color:white;
+    padding:12px;
+    position:sticky;
+    top:0;
+}
+
+td{
+    padding:12px;
+    border-bottom:1px solid #eee;
+}
+
+tr:nth-child(even){background:#f7faff;}
+
+tr:hover{
+    background:#e8f1ff;
+}
+
+.pagination{
+    margin-top:15px;
+    text-align:center;
+}
+
+.page-btn{
+    margin:3px;
+    padding:6px 12px;
+    border-radius:6px;
+    border:none;
+    background:#ddd;
+    cursor:pointer;
+}
+
+.page-btn.active{
+    background:#4a90e2;
+    color:white;
+}
+
+.dark{
+    background:#1e1f26;
+    color:white;
+}
+
+.dark table{ background:#2a2c36;}
+.dark td{ border-color:#444;}
+.dark tr:nth-child(even){ background:#242631;}
+.dark input{ background:#2a2c36;color:white;border:1px solid #555;}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Predicted Data Dashboard</h2>
+
+<div class="toolbar">
+    <input type="text" id="search" placeholder="Search table...">
+    <div>
+        <button onclick="downloadCSV()">Download CSV</button>
+        <button onclick="toggleDark()">Dark Mode</button>
+    </div>
+</div>
+
+<div id="table-container">
+    {{ table | safe }}
+</div>
+
+<div class="pagination" id="pagination"></div>
+
+</div>
+
+<script>
+const rowsPerPage = 10;
+let currentPage = 1;
+
+function setupPagination(){
+    const table=document.querySelector("table");
+    const rows=[...table.querySelectorAll("tbody tr")];
+    const pageCount=Math.ceil(rows.length/rowsPerPage);
+    const pagination=document.getElementById("pagination");
+    pagination.innerHTML="";
+
+    for(let i=1;i<=pageCount;i++){
+        const btn=document.createElement("button");
+        btn.innerText=i;
+        btn.className="page-btn";
+        if(i===1) btn.classList.add("active");
+
+        btn.onclick=()=>{
+            currentPage=i;
+            document.querySelectorAll(".page-btn").forEach(b=>b.classList.remove("active"));
+            btn.classList.add("active");
+            showPage(rows);
+        };
+
+        pagination.appendChild(btn);
+    }
+    showPage(rows);
+}
+
+function showPage(rows){
+    rows.forEach((row,i)=>{
+        row.style.display = (i>= (currentPage-1)*rowsPerPage && i< currentPage*rowsPerPage)
+        ? "" : "none";
+    });
+}
+
+document.getElementById("search").addEventListener("keyup",function(){
+    const value=this.value.toLowerCase();
+    document.querySelectorAll("tbody tr").forEach(row=>{
+        row.style.display=row.innerText.toLowerCase().includes(value)?"":"none";
+    });
+});
+
+function downloadCSV(){
+    const rows=document.querySelectorAll("table tr");
+    let csv=[];
+    rows.forEach(r=>{
+        let cols=r.querySelectorAll("td,th");
+        let row=[];
+        cols.forEach(c=>row.push(c.innerText));
+        csv.push(row.join(","));
+    });
+
+    const blob=new Blob([csv.join("\n")],{type:"text/csv"});
+    const a=document.createElement("a");
+    a.href=URL.createObjectURL(blob);
+    a.download="table.csv";
+    a.click();
+}
+
+function toggleDark(){
+    document.body.classList.toggle("dark");
+}
+
+window.onload=setupPagination;
+</script>
+
+</body>
+</html>
