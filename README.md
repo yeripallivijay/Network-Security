@@ -26,7 +26,7 @@
 
 **Production-grade Machine Learning system** detecting phishing URLs with **98% ROC-AUC accuracy**. Features **automated ML pipelines**, **FastAPI microservice**, **Docker containerization**, and **AWS cloud deployment** with **CI/CD automation**.
 
-**FAANG-level portfolio project** demonstrating:
+ Demonstrating:
 - ✅ End-to-end ML engineering workflows
 - ✅ Cloud-native deployment architecture
 - ✅ Production-ready DevOps practices
@@ -171,12 +171,6 @@ EC2 t3.micro → Docker Container → FastAPI:8080 → ECR Registry
                 ↑
           GitHub Actions CI/CD
 ```
-
-### Auto-Scaling Ready
-- **Health Checks**: `/health`
-- **Monitoring**: CloudWatch integration ready
-- **Load Balancer**: ALB configuration template included
-
 ---
 
 ## 🎯 Key Engineering Features
@@ -190,22 +184,6 @@ EC2 t3.micro → Docker Container → FastAPI:8080 → ECR Registry
 | **Monitoring** | Structured logging | **Production observability** |
 
 ---
-
-## 🚀 Future Roadmap
-
-```mermaid
-gantt
-    title Production Roadmap
-    dateFormat  YYYY-MM
-    section Authentication
-    JWT + RBAC     :2026-03, 1m
-    section Real-time
-    Kafka Streams  :2026-04, 2m
-    section Frontend
-    React Dashboard:2026-06, 3m
-    section MLOps
-    MLflow Tracking:2026-07, 2m
-```
 
 ---
 
@@ -235,11 +213,11 @@ git push origin feature/your-feature
 ## 👨‍💻 Author
 
 **Vijay Yeripalli**  
-**Aspiring AI Engineer | ML Enthusiast | Full-Stack Developer**
+**Aspiring Data Engineer | ML Enthusiast**
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yeripallivijay)
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/yeripallivijay)
-[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=todoist&logoColor=white)](https://yeripallivijay.github.io)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vijayarjun58/)
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/Vijay_yeripalli)
+[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=todoist&logoColor=white)]()
 
 </div>
 
@@ -247,7 +225,7 @@ git push origin feature/your-feature
   
 **⭐ Star this repo if you found it helpful!**
 
-![Footer Banner](https://user-images.githubusercontent.com/74038190/236456142-12345678-9abc-def0-1234-567890abcdef.png)
+
 
 </div>
 ```
