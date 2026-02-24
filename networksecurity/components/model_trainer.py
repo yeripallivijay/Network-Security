@@ -26,7 +26,7 @@ from sklearn.ensemble import (
 import mlflow
 
 import dagshub
-dagshub.init(repo_owner='yeripallivijay', repo_name='Network-Security', mlflow=True)
+#dagshub.init(repo_owner='yeripallivijay', repo_name='Network-Security', mlflow=True)
 
 class ModelTrainer:
     def __init__(self,model_trainer_config:ModelTrainerConfig,data_transformation_artifact:DataTransformationArtifact):
