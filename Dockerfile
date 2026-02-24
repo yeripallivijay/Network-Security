@@ -15,4 +15,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Install AWS CLI via pip (cleaner for slim images)
 RUN pip install --no-cache-dir awscli
 
+EXPOSE 8080
+
 CMD ["python3", "app.py"]
