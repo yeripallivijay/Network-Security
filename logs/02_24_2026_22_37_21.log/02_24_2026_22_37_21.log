@@ -1,0 +1,6 @@
+[2026-02-24 22:37:27,064] {C:\Users\USER\Desktop\Projects\Network Security\venv\lib\site-packages\httpx\_client.py:1025} INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2026-02-24 22:37:27,083] {C:\Users\USER\Desktop\Projects\Network Security\venv\lib\site-packages\dagshub\common\helpers.py:107} INFO - Accessing as yeripallivijay
+[2026-02-24 22:37:27,986] {C:\Users\USER\Desktop\Projects\Network Security\venv\lib\site-packages\httpx\_client.py:1025} INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/yeripallivijay/Network-Security "HTTP/1.1 200 OK"
+[2026-02-24 22:37:28,740] {C:\Users\USER\Desktop\Projects\Network Security\venv\lib\site-packages\httpx\_client.py:1025} INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2026-02-24 22:37:28,740] {C:\Users\USER\Desktop\Projects\Network Security\venv\lib\site-packages\dagshub\common\helpers.py:107} INFO - Initialized MLflow to track repo "yeripallivijay/Network-Security"
+[2026-02-24 22:37:28,740] {C:\Users\USER\Desktop\Projects\Network Security\venv\lib\site-packages\dagshub\common\helpers.py:107} INFO - Repository yeripallivijay/Network-Security initialized!
