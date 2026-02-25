@@ -116,3 +116,31 @@ Network-Security/
 ├── app.py             # Production entrypoint
 ├── Dockerfile
 └── requirements.txt
+🌟 Full Stack Data Scientist Skills Demonstrated
+✅ Data Engineering: ETL pipelines, data validation
+✅ Machine Learning: Ensemble methods, hyperparameter tuning
+✅ MLOps: MLflow, model versioning, experiment tracking
+✅ Full Stack: Flask API, Docker deployment, web UI
+✅ Production: Scalable, containerized, monitored
+
+🚀 Next Phase Roadmap
+ Real-time inference (Kafka + FastAPI)
+
+ AutoML integration (H2O.ai)
+
+ Cloud MLOps (AWS SageMaker / Vertex AI)
+
+ A/B testing framework
+
+ Model monitoring (Drift detection)
+
+📞 Vijay Yeripalli
+Full Stack Data Scientist | ML Engineer
+
+Portfolio
+LinkedIn
+Email
+
+💼 Production ML system showcasing complete data science lifecycle — from messy data to scalable APIs. Interview-ready for Data Scientist / ML Engineer roles.
+
+<div align="center"> <img src="https://img.shields.io/badge/⭐%20Star%20This%20Repo!-000000?style=social&logo=github" alt="Star Repo" /> </div> ```
