@@ -13,12 +13,12 @@
     <img src="https://img.shields.io/github/issues/yeripallivijay/Network-Security" alt="Issues" />
   </a>
   
-  <!-- DagsHub Badges (NEW) -->
-  <a href="https://dagshub.com/yeripallivijay/Network-Security">
-    <img src="https://img.shields.io/badge/DagsHub-MLflow-orange?logo=dagshub&logoColor=white" alt="DagsHub" />
+  <!-- DagsHub Experiments (NEW URL) -->
+  <a href="https://dagshub.com/yeripallivijay/Network-Security/experiments">
+    <img src="https://img.shields.io/badge/DagsHub-Experiments-orange?logo=dagshub&logoColor=white" alt="DagsHub Experiments" />
   </a>
-  <a href="https://dagshub.com/yeripallivijay/Network-Security/mlflow">
-    <img src="https://img.shields.io/badge/97.8%25-Accuracy-brightgreen" alt="Accuracy" />
+  <a href="https://dagshub.com/yeripallivijay/Network-Security/experiments">
+    <img src="https://img.shields.io/badge/97.8%25-Accuracy-brightgreen" alt="97.8% XGBoost" />
   </a>
   
   <!-- Tech Badges -->
@@ -30,9 +30,6 @@
   </a>
   <a href="#">
     <img src="https://img.shields.io/badge/Docker-Production-green" alt="Docker" />
-  </a>
-  <a href="#">
-    <img src="https://img.shields.io/badge/MLflow-2.10%2B-orange" alt="MLflow" />
   </a>
 </div>
 
