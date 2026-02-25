@@ -2,7 +2,7 @@
   <h1>🔐 Network Security & Anomaly Detection</h1>
   <p>Full Stack Data Science Pipeline — MLflow, Docker, Production Deployment</p>
   
-  <!-- Badges -->
+  <!-- GitHub Badges -->
   <a href="https://github.com/yeripallivijay/Network-Security/stargazers">
     <img src="https://img.shields.io/github/stars/yeripallivijay/Network-Security?style=social" alt="GitHub Stars" />
   </a>
@@ -12,6 +12,16 @@
   <a href="https://github.com/yeripallivijay/Network-Security/issues">
     <img src="https://img.shields.io/github/issues/yeripallivijay/Network-Security" alt="Issues" />
   </a>
+  
+  <!-- DagsHub Badges (NEW) -->
+  <a href="https://dagshub.com/yeripallivijay/Network-Security">
+    <img src="https://img.shields.io/badge/DagsHub-MLflow-orange?logo=dagshub&logoColor=white" alt="DagsHub" />
+  </a>
+  <a href="https://dagshub.com/yeripallivijay/Network-Security/mlflow">
+    <img src="https://img.shields.io/badge/97.8%25-Accuracy-brightgreen" alt="Accuracy" />
+  </a>
+  
+  <!-- Tech Badges -->
   <a href="https://github.com/yeripallivijay/Network-Security/blob/main/LICENSE">
     <img src="https://img.shields.io/github/license/yeripallivijay/Network-Security" alt="License" />
   </a>
@@ -25,6 +35,7 @@
     <img src="https://img.shields.io/badge/MLflow-2.10%2B-orange" alt="MLflow" />
   </a>
 </div>
+
 
 ---
 
@@ -44,15 +55,20 @@
 ---
 
 ## 🖼 Live Demo
+🔗 [Live DagsHub Experiments](https://dagshub.com/yeripallivijay/Network-Security/mlflow)
 
-**Model Predictions Dashboard**  
-![Predictions](screenshots/dashboard.png)
+## 🖼 DagsHub ML Experiments (97.8% Accuracy)
+*📊 Experiments Dashboard**  
+![Experiments](screenshots/01-dagshub-experiments.png)
+*XGBoost leader: Multiple runs tracked & compared*
 
-**Data Pipeline Flow**  
-![ETL Pipeline](screenshots/pipeline.png)
+**🎯 Model Metrics**  
+![Metrics](screenshots/02-model-metrics.png)
+*F1: 0.97 | Precision: 0.98 | Recall: 0.97*
 
-**Model Performance Metrics**  
-![Metrics](screenshots/metrics.png)
+**🔥 Feature Importance**  
+![Features](screenshots/03-feature-importance.png)
+*Top features driving 97.8% accuracy*
 
 ---
 
@@ -79,68 +95,51 @@ cd Network-Security
 python -m venv venv && source venv/bin/activate
 pip install -r requirements.txt
 python app.py  # http://localhost:8080
-Docker Production
-bash
+```
+## Docker Production
+```bash
 docker build -t network-security .
 docker run -p 8080:8080 -e MLFLOW_URI=mlflow network-security
-MLflow Experiments
-bash
+```
+## MLflow Experiments
+```bash
 mlflow ui  # Track all experiments at http://localhost:5000
-📊 Model Performance Matrix
-Model	Accuracy	F1-Score	ROC-AUC	Training Time
-XGBoost	97.8%	97.4%	0.99	2.1s
-Random Forest	96.5%	96.2%	0.98	3.4s
-LightGBM	97.1%	96.8%	0.98	1.8s
-Dataset: 500K+ network packets
-Features: 22 engineered features (packet size, protocol, timing)
+```
+## 📊 Model Performance Matrix
 
-🔬 Data Science Workflow
-text
-1. DATA INGESTION → Raw CSV → MongoDB
-2. FEATURE ENGINEERING → 22 features
-3. MODEL TRAINING → MLflow experiments
-4. MODEL EVALUATION → Cross-validation
-5. API DEPLOYMENT → Flask + Docker
-6. MONITORING → MLflow + custom metrics
-📁 Repository Structure
-text
-Network-Security/
-├── src/
-│   ├── data/          # ETL pipelines
-│   ├── features/      # Feature engineering
-│   ├── models/        # Training + evaluation
-│   └── api/           # Flask application
-├── models/            # Saved production models
-├── mlruns/            # MLflow tracking
-├── data/              # Raw + processed datasets
-├── app.py             # Production entrypoint
-├── Dockerfile
-└── requirements.txt
-🌟 Full Stack Data Scientist Skills Demonstrated
-✅ Data Engineering: ETL pipelines, data validation
-✅ Machine Learning: Ensemble methods, hyperparameter tuning
-✅ MLOps: MLflow, model versioning, experiment tracking
-✅ Full Stack: Flask API, Docker deployment, web UI
-✅ Production: Scalable, containerized, monitored
+| Model         | Accuracy | F1-Score | ROC-AUC | Training Time |
+| ------------- | -------- | -------- | ------- | ------------- |
+| XGBoost       | 97.8%    | 97.4%    | 0.99    | 2.1s          |
+| Random Forest | 96.5%    | 96.2%    | 0.98    | 3.4s          |
+| LightGBM      | 97.1%    | 96.8%    | 0.98    | 1.8s          |
 
-🚀 Next Phase Roadmap
- Real-time inference (Kafka + FastAPI)
+## 🔬 Data Science Workflow
 
- AutoML integration (H2O.ai)
+    1. DATA INGESTION → Raw CSV → MongoDB
+    2. FEATURE ENGINEERING → 22 features
+    3. MODEL TRAINING → MLflow experiments
+    4. MODEL EVALUATION → Cross-validation
+    5. API DEPLOYMENT → Flask + Docker
+    6. MONITORING → MLflow + custom metrics
+   
+## 📁 Repository Structure
+    Network-Security/
+    ├── src/
+    │   ├── data/          # ETL pipelines
+    │   ├── features/      # Feature engineering
+    │   ├── models/        # Training + evaluation
+    │   └── api/           # Flask application
+    ├── models/            # Saved production models
+    ├── mlruns/            # MLflow tracking
+    ├── data/              # Raw + processed datasets
+    ├── app.py             # Production entrypoint
+    ├── Dockerfile
+    └── requirements.txt
 
- Cloud MLOps (AWS SageMaker / Vertex AI)
 
- A/B testing framework
 
- Model monitoring (Drift detection)
 
 📞 Vijay Yeripalli
-Full Stack Data Scientist | ML Engineer
+Data Scientist | ML Engineer
 
-Portfolio
-LinkedIn
-Email
 
-💼 Production ML system showcasing complete data science lifecycle — from messy data to scalable APIs. Interview-ready for Data Scientist / ML Engineer roles.
-
-<div align="center"> <img src="https://img.shields.io/badge/⭐%20Star%20This%20Repo!-000000?style=social&logo=github" alt="Star Repo" /> </div> ```
