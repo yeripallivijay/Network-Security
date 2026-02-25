@@ -1,8 +1,3 @@
-Here's your README.md repositioned to highlight **Full Stack Data Scientist + Machine Learning Engineer** expertise:
-
-***
-
-```markdown
 <div align="center">
   <h1>🔐 Network Security & Anomaly Detection</h1>
   <p>Full Stack Data Science Pipeline — MLflow, Docker, Production Deployment</p>
@@ -84,49 +79,31 @@ cd Network-Security
 python -m venv venv && source venv/bin/activate
 pip install -r requirements.txt
 python app.py  # http://localhost:8080
-```
-
-### Docker Production
-```bash
+Docker Production
+bash
 docker build -t network-security .
 docker run -p 8080:8080 -e MLFLOW_URI=mlflow network-security
-```
-
-### MLflow Experiments
-```bash
+MLflow Experiments
+bash
 mlflow ui  # Track all experiments at http://localhost:5000
-```
+📊 Model Performance Matrix
+Model	Accuracy	F1-Score	ROC-AUC	Training Time
+XGBoost	97.8%	97.4%	0.99	2.1s
+Random Forest	96.5%	96.2%	0.98	3.4s
+LightGBM	97.1%	96.8%	0.98	1.8s
+Dataset: 500K+ network packets
+Features: 22 engineered features (packet size, protocol, timing)
 
----
-
-## 📊 Model Performance Matrix
-
-| Model | Accuracy | F1-Score | ROC-AUC | Training Time |
-|-------|----------|----------|---------|---------------|
-| **XGBoost** | **97.8%** | **97.4%** | **0.99** | 2.1s |
-| Random Forest | 96.5% | 96.2% | 0.98 | 3.4s |
-| LightGBM | 97.1% | 96.8% | 0.98 | 1.8s |
-
-**Dataset**: 500K+ network packets  
-**Features**: 22 engineered features (packet size, protocol, timing)
-
----
-
-## 🔬 Data Science Workflow
-
-```
+🔬 Data Science Workflow
+text
 1. DATA INGESTION → Raw CSV → MongoDB
 2. FEATURE ENGINEERING → 22 features
 3. MODEL TRAINING → MLflow experiments
 4. MODEL EVALUATION → Cross-validation
 5. API DEPLOYMENT → Flask + Docker
 6. MONITORING → MLflow + custom metrics
-```
-
----
-
-## 📁 Repository Structure
-```
+📁 Repository Structure
+text
 Network-Security/
 ├── src/
 │   ├── data/          # ETL pipelines
@@ -139,46 +116,3 @@ Network-Security/
 ├── app.py             # Production entrypoint
 ├── Dockerfile
 └── requirements.txt
-```
-
----
-
-## 🌟 Full Stack Data Scientist Skills Demonstrated
-
-✅ **Data Engineering**: ETL pipelines, data validation  
-✅ **Machine Learning**: Ensemble methods, hyperparameter tuning  
-✅ **MLOps**: MLflow, model versioning, experiment tracking  
-✅ **Full Stack**: Flask API, Docker deployment, web UI  
-✅ **Production**: Scalable, containerized, monitored  
-
----
-
-## 🚀 Next Phase Roadmap
-
-- [ ] Real-time inference (Kafka + FastAPI)
-- [ ] AutoML integration (H2O.ai)
-- [ ] Cloud MLOps (AWS SageMaker / Vertex AI)
-- [ ] A/B testing framework
-- [ ] Model monitoring (Drift detection)
-
----
-
-## 📞 Vijay Yeripalli
-**Full Stack Data Scientist | ML Engineer**
-
-[![Portfolio](https://img.shields.io/badge/Portfolio-View%20Projects-blue?style=flat&logo=gitbook)](https://github.com/yeripallivijay)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=flat&logo=linkedin)](https://linkedin.com/in/yeripallivijay)
-[![Email](https://img.shields.io/badge/Gmail-Contact-D14836?style=flat&logo=gmail)](mailto:yeripallivijay2003@gmail.com)
-
-> 💼 *Production ML system showcasing complete data science lifecycle — from messy data to scalable APIs. Interview-ready for Data Scientist / ML Engineer roles.*
-
-<div align="center">
-  <img src="https://img.shields.io/badge/⭐%20Star%20This%20Repo!-000000?style=social&logo=github" alt="Star Repo" />
-</div>
-```
-
-***
-
-Now perfectly positioned as **Full Stack Data Scientist + ML Engineer** with production MLOps skills that recruiters love!
-
-Would you like me to create a **matching LinkedIn post** (3-4 lines) or **screenshot templates** for the demo sections?
